@@ -122,3 +122,50 @@ footer {
     border-radius: 10px;
 }
 
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        text-align: center;
+        padding: 10px;
+        background-size: cover;
+    }
+
+    header {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .navbar {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .gallery img {
+        width: 100%; /* Make images responsive */
+        height: auto;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    /* Adjust buttons */
+    .navbar ul li a {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+}
+
