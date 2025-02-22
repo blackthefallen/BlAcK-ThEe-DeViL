@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    text-align: center;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -8,9 +9,9 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 10px;
-    text-align: center;
+    padding: 20px;
 }
+
 
 nav ul {
     list-style: none;
