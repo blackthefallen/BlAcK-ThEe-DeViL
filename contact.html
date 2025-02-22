@@ -10,14 +10,7 @@
 	
 	  <!-- Include Header -->
   <div id="header"></div>
-  <script>
-    fetch('/templates/header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header').innerHTML = data;
-      });
-
-    </script>
+  <script src="load.js">  </script>
 
     <section>
         <h1>Contact Me</h1>
@@ -30,14 +23,7 @@
         <p>Email: <a href="mailto: akhileshs593@gmail.com">akhileshs593@gmail.com</a></p>
 
     </section>
-	<script>
-		    // Include Footer
-    fetch('/templates/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer').innerHTML = data;
-      });
-  </script>
+	<script src="load.js"> // Include Footer   </script>
 
   <!-- Include Footer -->
   <div id="footer"></div>

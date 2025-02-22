@@ -10,14 +10,7 @@
 	
 	  <!-- Include Header -->
   <div id="header"></div>
-  <script>
-    fetch('/templates/header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header').innerHTML = data;
-      });
-
-  </script>
+  <script src="load.js">   </script>
   <section>
         <h1>About Me</h1>
         <p>This is where I talk about myself and my bio.</p>
@@ -31,12 +24,7 @@
         <p>You can view my bio by clicking the link below:</p>
         <a href="bio.pdf" target="_blank">View My Bio (PDF)</a>
     </section>
-    <script>    // Include Footer
-    fetch('/templates/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer').innerHTML = data;
-      });
+    <script src="load.js">
   </script>
 
   <!-- Include Footer -->
