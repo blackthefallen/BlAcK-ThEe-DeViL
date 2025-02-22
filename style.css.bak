@@ -9,7 +9,7 @@ body {
     background-attachment: fixed;
 }
 
-/* Style the header box */
+header {
 .navbar {
   background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
   padding: 15px;
@@ -52,6 +52,9 @@ body {
   background-color: #ff2a00; /* Darker orange */
   transform: scale(1.1); /* Slightly enlarge */
 }
+
+}
+
 
 nav ul {
     list-style: none;

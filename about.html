@@ -17,19 +17,8 @@
         document.getElementById('header').innerHTML = data;
       });
 
-    // Include Footer
-    fetch('/templates/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer').innerHTML = data;
-      });
   </script>
-
-  <!-- Include Footer -->
-  <div id="footer"></div>
-
-
-    <section>
+  <section>
         <h1>About Me</h1>
         <p>This is where I talk about myself and my bio.</p>
 	<p>---------------------------------------------</p>
@@ -42,7 +31,17 @@
         <p>You can view my bio by clicking the link below:</p>
         <a href="bio.pdf" target="_blank">View My Bio (PDF)</a>
     </section>
- <div id="footer-placeholder"></div>
+    <script>    // Include Footer
+    fetch('/templates/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+
+  <!-- Include Footer -->
+  <div id="footer"></div> 
+
 </body>
 </html>
 
