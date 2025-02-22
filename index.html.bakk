@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<header>
+  <div class="navbar">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <section>
+        <h1>Welcome to My Portfolio</h1>
+        <p>This is my homepage where I showcase my ideas.</p>
+    </section>
+
+     <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="gallery">
+                <h1> <b><i><u> Innovation </u></i></b></h1>
+
+            <img src="assets/images/image1.jpg" alt="innovation">
+
+            <h1> <b><i><u> Hard Work </u></i></b></h1>
+            <img src="assets/images/image2.jpg" alt="Hard Work">
+
+            <h1> <b><i><u> Aim </u></i></b></h1>
+
+            <img src="assets/images/image3.jpg" alt="Aim">
+        </div>
+    </section>
+    <footer>
+    <p>© 2025 My Portfolio. All rights reserved.</p>
+</footer>
+
+
+
+</body>
+</html>
+
