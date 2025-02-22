@@ -3,13 +3,13 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-image: url('assets/images/background.jpg'); /* Corrected */
+    background-image: url('/assets/images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-/* Style the header box */
+header {
 .navbar {
   background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
   padding: 15px;
@@ -51,5 +51,28 @@ body {
 .navbar ul li a:hover {
   background-color: #ff2a00; /* Darker orange */
   transform: scale(1.1); /* Slightly enlarge */
+}
+
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    text-align: center;
+    padding: 20px;
 }
 
