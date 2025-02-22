@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+  padding: 15px;
+  border-radius: 15px; /* Rounded box */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  margin: 20px auto; /* Centering the navbar */
+}
+
+/* Remove default list styles */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Align items horizontally */
+  gap: 20px; /* Spacing between buttons */
+}
+
+/* Oval buttons for navigation */
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: #ff5733; /* Orange button */
+  padding: 12px 24px;
+  border-radius: 25px; /* Makes it oval */
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s;
+  display: inline-block;
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+  background-color: #ff2a00; /* Darker orange */
+  transform: scale(1.1); /* Slightly enlarge */
+}
+
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    text-align: center;
+    padding: 20px;
+}
+
