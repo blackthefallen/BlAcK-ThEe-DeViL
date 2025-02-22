@@ -1,78 +1,171 @@
+/* Apply background image */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    background-image: url('/assets/images/background.jpg');
+    background-image: url('assets/images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-header {
+/* Style the header box */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
-  padding: 15px;
-  border-radius: 15px; /* Rounded box */
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 90%;
-  margin: 20px auto; /* Centering the navbar */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+    padding: 20px;
+    border-radius: 15px; /* Rounded box */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    margin: 20px auto; /* Centering the navbar */
+    color: white;
 }
 
-/* Remove default list styles */
+/* Navigation menu */
 .navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center; /* Align items horizontally */
-  gap: 20px; /* Spacing between buttons */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between buttons */
 }
 
 /* Oval buttons for navigation */
 .navbar ul li {
-  display: inline-block;
+    display: inline-block;
 }
 
 .navbar ul li a {
-  text-decoration: none;
-  color: white;
-  background-color: #ff5733; /* Orange button */
-  padding: 12px 24px;
-  border-radius: 25px; /* Makes it oval */
-  font-size: 18px;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s;
-  display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #ff5733; /* Orange button */
+    padding: 12px 24px;
+    border-radius: 25px; /* Makes it oval */
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s;
+    display: inline-block;
 }
 
 /* Hover effect */
 .navbar ul li a:hover {
-  background-color: #ff2a00; /* Darker orange */
-  transform: scale(1.1); /* Slightly enlarge */
+    background-color: #ff2a00; /* Darker orange */
+    transform: scale(1.1); /* Slightly enlarge */
 }
 
+/* Center content */
+section {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-nav ul {
-    list-style: none;
-    padding: 0;
+/* Image Gallery */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.work-item {
+    margin: 20px 0;
 }
 
-nav ul li a {
+.work-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: #007BFF;
     color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Email link */
+.email-link {
+    color: #ff5733;
+    font-weight: bold;
     text-decoration: none;
 }
 
-section {
+.email-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        text-align: center;
+        padding: 10px;
+        background-size: cover;
+    }
+
+    header {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .navbar {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .gallery img {
+        width: 100%; /* Make images responsive */
+        height: auto;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    /* Adjust buttons */
+    .navbar ul li a {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
 }
 
