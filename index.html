@@ -7,7 +7,26 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-	  <div id="header-placeholder"></div>
+      <!-- Include Header -->
+  <div id="header"></div>
+  <script>
+    fetch('/templates/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+
+    // Include Footer
+    fetch('/templates/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+
+  <!-- Include Footer -->
+  <div id="footer"></div>
+
     <section>
         <h1>Welcome to My Portfolio</h1>
         <p>This is my homepage where I showcase my ideas.</p>
