@@ -1,0 +1,144 @@
+/* Default Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header Styling */
+header {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows items to wrap on small screens */
+    gap: 15px;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Makes sure the menu adjusts */
+    justify-content: center;
+    gap: 10px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff5733;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff2a00;
+    transform: scale(1.1);
+}
+
+/* Content Sections */
+section {
+    padding: 40px 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Images inside Portfolio */
+.gallery img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    header {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        display: block;
+        width: 90%;
+        margin: 5px auto;
+        padding: 12px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        padding: 15px;
+    }
+}
+
