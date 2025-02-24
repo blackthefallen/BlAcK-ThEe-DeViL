@@ -158,9 +158,9 @@ footer {
 
     .navbar ul li a {
         display: block;
-        width: 90%;
-        margin: 5px auto;
-        padding: 12px;
+        width: 80%;
+        margin: auto auto;
+        padding: 5px;
     }
 
     section {
